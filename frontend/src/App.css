@@ -1,0 +1,114 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+General body styling body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+/* Container for Signup */
+.signup-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #fff; /* white card */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid var(--blue);
+  color: var(--black); /* black text */
+}
+
+/* Heading */
+.signup-container h2 {
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.signup-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+/* Input fields and select */
+.signup-container input,
+.signup-container select {
+  width: calc(100% - 21px);
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: var(--black);
+}
+
+/* Input focus */
+.signup-container input:focus,
+.signup-container select:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 5px rgba(0, 173, 181, 0.5);
+}
+
+/* Button */
+.signup-container button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: var(--blue);
+  color: #fff; /* white text on blue */
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+  background-color: #00929a; /* darker blue on hover */
+}
+
+/* Success message */
+.signup-container .success-message {
+  color: var(--blue);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Error message */
+.signup-container .error-message {
+  color: #D9534F; /* keep red */
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Radio button container */
+.signup-container .role-options {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Radio buttons */
+.signup-container .role-options input[type="radio"] {
+  accent-color: var(--blue);
+  margin-right: 0.3rem;
+  margin-top: 18px;
+}
+
+/* Role labels */
+.signup-container .role-options label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: var(--black);
+}

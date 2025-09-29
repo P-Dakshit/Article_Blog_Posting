@@ -1,0 +1,197 @@
+/* General container styling */
+.blog-upper-container{
+    padding: 0 10px;
+}
+
+.blog-container {
+    margin: auto;
+    padding: 2rem;
+    color: var(--black);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.blog-container h2 {
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+/* Form labels */
+.blog-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* Input fields and textarea */
+.blog-container input,
+.blog-container textarea {
+    width: calc(100% - 21px);
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Input focus */
+.blog-container input:focus,
+.blog-container textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 5px rgba(0, 173, 181, 0.5);
+    /* matches --blue with transparency */
+}
+
+/* Buttons */
+.blog-container button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog-container button:hover {
+    background-color: #333333;
+    /* slightly lighter black */
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Blog card styling */
+.blog-card {
+    position: relative;
+    max-width: 29%;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 1rem;
+    padding-bottom: 60px;
+    background-color: var(--white);
+}
+
+.blog-card h3,
+.blog-card p {
+    color: var(--black);
+    margin-bottom: 0.5rem;
+}
+
+.blog-card img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/* Buttons inside blog card */
+.blog-card .blog-actions {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.blog-card .blog-actions button {
+    width: auto;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.blog-card .blog-actions button:hover {
+    background-color: #333333;
+}
+
+
+@media(min-width: 1729px) {
+    .blog-container {
+        max-width: 1650px;
+    }
+}
+
+@media(max-width: 1728px) {
+    .blog-container {
+        max-width: 1500px;
+    }
+}
+
+@media(max-width: 1640px) {
+    .blog-container {
+        max-width: 1340px;
+    }
+}
+
+@media(max-width: 1440px) {
+    .blog-container {
+        max-width: 1200px;
+    }
+}
+
+@media(max-width: 1359px) {
+    .blog-container {
+        max-width: 900px;
+    }
+
+    .blog-card {
+        max-width: 28%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .blog-container {
+        max-width: 800px;
+    }
+
+    .blog-list {
+        gap: 15px;
+    }
+
+    .blog-card {
+        max-width: 27.5%;
+    }
+}
+
+@media(max-width: 991px) {
+    .blog-container {
+        max-width: 600px;
+    }
+
+    .blog-card {
+        max-width: 43%;
+    }
+}
+
+@media(max-width: 768px) {
+    .blog-container {
+        max-width: 400px;
+    }
+
+    .blog-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .blog-container {
+        max-width: 400px;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,129 @@
+/* frontend/src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0.2rem 2rem;
+  color: var(--black);
+  border-bottom: 1px solid var(--gray);
+}
+
+.navbar-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: var(--primary);
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.navbar-auth button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar-auth button:hover {
+  background-color: #333333;
+  /* slightly lighter black on hover */
+}
+
+.navbar-user {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--black);
+}
+
+/* Mobile / Tablet */
+.navbar-links {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger menu visible on tablet/mobile */
+.navbar-hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.2rem 1rem;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 37px;
+    z-index: 999;
+    right: 0;
+    background-color: var(--white);
+    width: 200px;
+    border-left: 1px solid var(--gray);
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-auth {
+    display: none;
+    /* hide desktop auth buttons */
+  }
+
+  .mobile-auth-buttons button,
+  .mobile-auth-buttons a button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+
+    /* Match desktop logout button styling */
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .mobile-auth-buttons button:hover,
+  .mobile-auth-buttons a button:hover {
+    background-color: #333333;
+  }
+
+  .navbar-hamburger {
+    display: block;
+  }
+}

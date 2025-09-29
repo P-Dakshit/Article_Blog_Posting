@@ -1,0 +1,88 @@
+/* Container */
+.allusers-upper-container {
+    padding: 0 10px;
+}
+
+.allusers-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid var(--primary);
+    font-family: Arial, sans-serif;
+    color: var(--black);
+}
+
+/* Heading */
+.allusers-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Table wrapper for horizontal scroll */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Table */
+.allusers-container table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    /* ensures table scrolls if viewport smaller */
+}
+
+/* Table headers */
+.allusers-container th {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.8rem;
+    text-align: left;
+}
+
+/* Table cells */
+.allusers-container td {
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+/* Alternate row color */
+.allusers-container tr:nth-child(even) {
+    background-color: var(--secondary);
+}
+
+/* Delete button */
+.allusers-container button {
+    padding: 0.5rem 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.allusers-container button:hover {
+    background-color: #333333;
+}
+
+/* Responsive: keep horizontal scroll */
+@media (max-width: 768px) {
+    .allusers-container {
+        margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .allusers-container table {
+        width: auto;
+        /* allows table to exceed container width */
+    }
+}
