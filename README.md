@@ -24,10 +24,6 @@
 - **users table** → `id`, `name`, `email`, `password_hash`, `role` (user/admin), `reset_expires`, `reset_otp`  
 - **blogs table** → `id`, `title`, `content`, `user_id` (FK to users)  
 
-> **Note:**  
-> ✅ Done  
-> 🔄 In Production  
-
 ---
 
 ## 🖥️ Frontend Structure  
