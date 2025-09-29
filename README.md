@@ -50,7 +50,6 @@ frontend/
 │ │ ├── login.jsx ✅ Login frontend  
 │ │ ├── resetPassword.jsx ✅ Reset Password frontend  
 │ │ └── signup.jsx ✅ Signup frontend  
-│ ├── store.js ✅ Redux store setup  
 │ ├── App.jsx  
 │ └── index.js ✅ React entry point  
 ├── .env # Environment variables  
