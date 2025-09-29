@@ -58,7 +58,7 @@ frontend/
 
 ## ⚙️ Backend Structure  
 
-backend/
+backend/  
 ├── connection/  
 │ └── db.js ✅ Database connection setup  
 ├── controller/  
